@@ -135,7 +135,7 @@
             class="mdi-social-school small"></i><span>Education</span></a>
       </li>
       <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#blog" class="waves-effect waves-dark teal-text"><i
+        <a aria-label="Navigate to the Contact section" href="https://mhnabilcoder.github.io/blog/" class="waves-effect waves-dark teal-text"><i
             class="mdi-content-mail small"></i><span>Blog</span></a>
       </li>
       <li class="bold">
@@ -203,7 +203,7 @@
             </div>
             <div class='buttons'>
               <a href="#about" class="readme">Read More</a>
-              <a href="#blog" class="contactme">Blog</a>
+              <a href="https://mhnabilcoder.github.io/blog/" class="contactme">Blog</a>
             </div>
           </div>
         </div>
@@ -501,26 +501,8 @@ of each drug container to estimate the degradation of the drug.
             <h3>Our Blog</h3>
         </div> -->
   
-        ---
-        layout: main
-        published: true
-        ---
-        {% for post in paginator.posts %}
-        <article class="post">
-          {% if post.img %}
-            <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
-          {% else %}
-          {% endif %}
-          <div class="post-content">
-            <h2 class="post-title"><a href="{{/post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
-            <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
-            <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
-            <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
-          </div>
-        </article>
-        {% endfor %}
-        
-        {% include pagination.html %}
+        <!--**container**************-->
+        <div class="blog-box-container">
         
             <!-- **box** -->
             <div class="blog-box">
