@@ -69,20 +69,19 @@ h6 {
   background-color: white;
 }
 
-.button {
+.moredetails {
   position: relative;
-  padding: 11px 35px;
-  background: none;
-  color: #fff;
-  border: 2px solid #fff;
-  font-weight: 600;
+  padding: 11px 11px;
+  background: #040b14;
+  border: 2px solid #040b14;
+  font-weight: 700;
   font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
-  margin-top: 1.5em;
   border-radius: 5px;
   -webkit-border-radius: 5px;
 }
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -407,6 +406,7 @@ section {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  text-align: start;
 }
 
 .about .content ul strong {
