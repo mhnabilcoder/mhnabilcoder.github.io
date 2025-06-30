@@ -559,48 +559,66 @@
   <script src="assets/js/main.js"></script>
 
   <!--Redirecting-->
-<!-- Modal Popup HTML -->
+<!-- Enhanced Modal Popup HTML -->
 <div id="old-portfolio-modal" style="
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.75);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 9999;
+  font-family: 'Segoe UI', sans-serif;
 ">
   <div style="
-    background-color: white;
-    padding: 30px;
-    border-radius: 12px;
-    max-width: 400px;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    max-width: 500px;
+    width: 90%;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.6s ease-out;
   ">
-    <h2 style="margin-bottom: 10px;">Notice</h2>
-    <p>This is my <strong>old portfolio</strong>.</p>
-    <p>You’ll be redirected shortly...</p>
-    <a href="https://mhnabil.edcluster.com/" style="
+    <h1 style="font-size: 28px; margin-bottom: 15px; color: #333;">⚠️ Notice</h1>
+    <p style="font-size: 18px; color: #444; margin-bottom: 10px;">
+      You’re viewing my <strong style="color: #d9534f;">old portfolio</strong>.
+    </p>
+    <p style="font-size: 16px; color: #666; margin-bottom: 25px;">
+      You’ll be redirected to my updated website shortly...
+    </p>
+    <a href="https://nabilhossain.com" style="
       display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #007BFF;
+      background: #007BFF;
       color: white;
+      padding: 14px 28px;
+      font-size: 16px;
+      border-radius: 8px;
       text-decoration: none;
-      border-radius: 5px;
-    ">Go to New Website</a>
+      box-shadow: 0 4px 14px rgba(0, 123, 255, 0.4);
+      transition: background 0.3s ease;
+    " onmouseover="this.style.background='#0056b3'" onmouseout="this.style.background='#007BFF'">
+      🔗 Go to New Website
+    </a>
   </div>
 </div>
 
-<!-- Modal Script -->
+<!-- Modal Animation and Script -->
+<style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
+
 <script>
-  // Wait 4 seconds before redirecting
+  // Wait 5 seconds before redirecting
   setTimeout(function () {
-    window.location.href = "https://mhnabil.edcluster.com/";
-  }, 4000);
+    window.location.href = "https://nabilhossain.com";
+  }, 5000);
 </script>
 
 
