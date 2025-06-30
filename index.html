@@ -558,6 +558,52 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!--Redirecting-->
+<!-- Modal Popup HTML -->
+<div id="old-portfolio-modal" style="
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+">
+  <div style="
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  ">
+    <h2 style="margin-bottom: 10px;">Notice</h2>
+    <p>This is my <strong>old portfolio</strong>.</p>
+    <p>You’ll be redirected shortly...</p>
+    <a href="https://nabilhossain.com" style="
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    ">Go to New Website</a>
+  </div>
+</div>
+
+<!-- Modal Script -->
+<script>
+  // Wait 4 seconds before redirecting
+  setTimeout(function () {
+    window.location.href = "https://nabilhossain.com";
+  }, 4000);
+</script>
+
+
 </body>
 
 </html>
